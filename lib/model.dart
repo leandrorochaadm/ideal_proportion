@@ -16,7 +16,7 @@ class MemberBody {
 
   double get sizeIdeal => (bodyRatio(this.ratio) * this.heigth);
 
-  String get sizeIdealStr => sizeIdeal.toStringAsFixed(1);
+  String get sizeIdealStr => sizeIdeal.toStringAsFixed(1) + " cm";
 
   String get sizeCurrentStr => sizeCurrent.toStringAsFixed(1);
 
@@ -24,7 +24,7 @@ class MemberBody {
       ? (sizeCurrent / sizeIdeal * 100)
       : (sizeIdeal / sizeCurrent * 100);
 
-  String get percentualGoalStr => percentualGoal.toStringAsFixed(2) + "%";
+  String get percentualGoalStr => percentualGoal.toStringAsFixed(0) + "%";
 
   // String get b => bodyRatio(this.ratio).toStringAsFixed(3);
 }
