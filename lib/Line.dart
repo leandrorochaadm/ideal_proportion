@@ -39,12 +39,11 @@ class _LineState extends State<Line> {
           const SizedBox(
             height: 8.0,
           ),
-          widget.memberBody.heigth > 0 && widget.memberBody.sizeCurrent > 0
+          MemberBody.heigth > 0 && widget.memberBody.sizeCurrent > 0
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Altura: ${widget.memberBody.heigth}"),
-                    Text("Atual: ${widget.memberBody.sizeCurrentStr}"),
+                    Text("Ideal: ${MemberBody.heigth}"),
                     Text("Ideal: ${widget.memberBody.sizeIdealStr}"),
                     Text("Alcançado: ${widget.memberBody.percentualGoalStr}"),
                   ],
