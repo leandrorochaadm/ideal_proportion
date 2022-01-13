@@ -1,15 +1,14 @@
 import 'controller.dart';
 
 class MemberBody {
-  double sizeCurrent;
+  double sizeCurrent = 0;
   double heigth;
   String name;
   List<double> ratio;
   bool wantToIncrease;
 
   MemberBody(
-      {required this.sizeCurrent,
-      required this.heigth,
+      {required this.heigth,
       required this.name,
       required this.ratio,
       this.wantToIncrease = true});

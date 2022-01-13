@@ -39,15 +39,17 @@ class _LineState extends State<Line> {
           const SizedBox(
             height: 8.0,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Text("Altura: ${widget.memberBody.heigth}"),
-              Text("Atual: ${widget.memberBody.sizeCurrentStr}"),
-              Text("Ideal: ${widget.memberBody.sizeIdealStr}"),
-              Text("Alcançado: ${widget.memberBody.percentualGoalStr}"),
-            ],
-          ),
+          widget.memberBody.heigth > 0 && widget.memberBody.sizeCurrent > 0
+              ? Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Altura: ${widget.memberBody.heigth}"),
+                    Text("Atual: ${widget.memberBody.sizeCurrentStr}"),
+                    Text("Ideal: ${widget.memberBody.sizeIdealStr}"),
+                    Text("Alcançado: ${widget.memberBody.percentualGoalStr}"),
+                  ],
+                )
+              : const SizedBox(),
         ],
       ),
     );
