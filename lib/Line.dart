@@ -43,8 +43,8 @@ class _LineState extends State<Line> {
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text("Ideal: ${MemberBody.heigth}"),
-                    Text("Ideal: ${MemberBody.gender}"),
+                    // Text("Ideal: ${MemberBody.heigth}"),
+                    // Text("Ideal: ${MemberBody.gender}"),
                     Text("Ideal: ${widget.memberBody.sizeIdealStr}"),
                     Text("Alcançado: ${widget.memberBody.percentualGoalStr}"),
                   ],

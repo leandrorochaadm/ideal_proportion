@@ -7,13 +7,19 @@ class MemberBody {
   static Gender gender = Gender.male;
   double sizeCurrent = 0;
   String name;
-  List<double> ratio;
+  List<double> ratioMale;
+  List<double> ratioFemale;
   bool wantToIncrease;
 
   MemberBody(
-      {required this.name, required this.ratio, this.wantToIncrease = true});
+      {required this.name,
+      required this.ratioMale,
+      required this.ratioFemale,
+      this.wantToIncrease = true});
 
-  double get sizeIdeal => (bodyRatio(this.ratio) * heigth);
+  double get sizeIdeal => gender == Gender.male
+      ? (bodyRatio(ratioMale) * heigth)
+      : (bodyRatio(ratioFemale) * heigth);
 
   String get sizeIdealStr => sizeIdeal.toStringAsFixed(1) + " cm";
 
