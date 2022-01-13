@@ -1,7 +1,10 @@
 import 'controller.dart';
 
+enum Gender { male, female }
+
 class MemberBody {
   static double heigth = 0;
+  static Gender gender = Gender.male;
   double sizeCurrent = 0;
   String name;
   List<double> ratio;

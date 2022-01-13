@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    // double height = 179.0;
+    Gender? _gender;
 
     return Scaffold(
       body: Column(
@@ -26,6 +26,35 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.w500,
                   fontSize: 24,
                   color: Theme.of(context).colorScheme.primary),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                RadioListTile<Gender>(
+                    title: const Text('Masculino'),
+                    value: Gender.male,
+                    groupValue: _gender,
+                    onChanged: (Gender? v) {
+                      setState(() {
+                        _gender = v;
+                        MemberBody.gender = _gender!;
+                        print(_gender);
+                      });
+                    }),
+                RadioListTile<Gender>(
+                    title: const Text('Feminino'),
+                    value: Gender.female,
+                    groupValue: _gender,
+                    onChanged: (Gender? v) {
+                      setState(() {
+                        _gender = v;
+                        MemberBody.gender = _gender!;
+                        print(_gender);
+                      });
+                    }),
+              ],
             ),
           ),
           Padding(
