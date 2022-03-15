@@ -32,4 +32,6 @@ class MemberBody {
   String get percentualGoalStr => percentualGoal.toStringAsFixed(0) + "%";
 
   // String get b => bodyRatio(this.ratio).toStringAsFixed(3);
+
+  bool get goalHit => percentualGoal >= 100;
 }
