@@ -1,12 +1,12 @@
 # ideal_proportion
 
-Esse app tem o objetivo de calcular algumas sugestões das proporsões ideais de corpos adultos para homens e mulheres, seguindo as proporções aureas e usando o [número do Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci).
+Esse app tem o objetivo de calcular algumas sugestões das proporsões ideais de corpos adultos para homens e mulheres, seguindo as proporções áureas e usando o [número do Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci).
 
 ## Exemplo de corpo masculino
-<img src="assets/man.png" alt="drawing"  width="auto" height="480"/> 
+<img src="assets/man.png" alt="drawing"  width="360" height="auto"/> 
 
 ## Exemplo de corpo feminino
-<img src="assets/woman.png" alt="drawing"  width="auto" height="480"/> 
+<img src="assets/woman.png" alt="drawing"  width="360" height="auto"/> 
 
 ---
 
