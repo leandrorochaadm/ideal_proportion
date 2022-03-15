@@ -1,16 +1,38 @@
 # ideal_proportion
 
-A new Flutter project.
+Esse app tem o objetivo de calcular algumas sugestões das proporsões ideais de corpos adultos para homens e mulheres, seguindo as proporções aureas e usando o [número do Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci).
 
-## Getting Started
+## Exemplo de corpo masculino
+<img src="assets/man.png" alt="drawing"  width="auto" height="480"/> 
 
-This project is a starting point for a Flutter application.
+## Exemplo de corpo feminino
+<img src="assets/woman.png" alt="drawing"  width="auto" height="480"/> 
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Este projeto usa Flutter, um framework da linguagem Dart.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Pré-requisitos
+* Dart 2.14.4
+* Flutter 2.15.1
+
+Se você quiser saber mais sobre a Flutter, visite seu site: http://flutter.dev/.
+
+## Executando o aplicativo
+
+Você pode executar seu aplicativo em qualquer sistema operacional com ambiente de desolvimento configurado, por exemplo Android, iOS, Linux, Windows e MacOS. Usando o comando:
+```
+flutter run
+```
+
+## Criação de apk Android
+
+Você pode criar um executável nativo usando
+```
+flutter build apk
+```
+
+Ele produz o arquivo `app-release.apk` no diretório `build/app/outputs/apk/release/`.
+
+
+Se você quiser saber mais sobre como gerar apk Android, consulte https://docs.flutter.dev/deployment/android#build-an-apk
